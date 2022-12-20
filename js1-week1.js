@@ -36,16 +36,22 @@
 
 const numberOfTrainees = 15;
 const numberOfMentors = 8;
-
 const totalNumber = numberOfTrainees + numberOfMentors;
 
-console.log(numberOfTrainees);
-console.log(numberOfMentors);
-console.log(totalNumber)
+const traineeMassage = `Number of trainees: ${numberOfTrainees}`;
+const mentorMassage = `Number of mentors: ${numberOfMentors}`;
+const totalMessage = `Total number of trainees and mentors: ${numberOfTrainees}`;
+
+console.log(traineeMassage);
+console.log(mentorMassage);
+console.log(totalMessage)
 
 const percentOfTrainees = (numberOfTrainees * 100) / totalNumber;
 const percentOfMentors = (numberOfMentors * 100) / totalNumber;
 const numberOfTraineesRound = Math.round(percentOfTrainees)
-const numberOfMentorsRound = Math.round(percentOfMentors)
-console.log(numberOfTraineesRound);
-console.log(numberOfMentorsRound);
+const numberOfMentorsRound = Math.round(percentOfMentors);
+const numOfTaMsg = `Percentage of trainees: ${numberOfTraineesRound}%`;
+const numOfMntMsg = `Percentage of mentors: ${numberOfMentorsRound}%`;
+console.log(numOfTaMsg);
+console.log(numOfMntMsg);
+
